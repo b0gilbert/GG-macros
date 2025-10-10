@@ -24,3 +24,5 @@ Now you are ready to play. We hope you enjoy using this software as much as we d
 
 Updating the macros:
 The macros in the User Procedures folder are updated frequently. To update, simply replace these files. The “INCLUDES_xx” files in the Igor Procedures do not need updating.
+
+If you use these routines please cite the DOI 10.5281/zenodo.17314120. 
