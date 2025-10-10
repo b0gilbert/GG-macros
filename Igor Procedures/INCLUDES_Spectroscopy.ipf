@@ -1,1 +1,0 @@
-#pragma rtGlobals=1		// Use modern global access method.Menu "Spectra"	"Load Spectrum Analysis Package"//, Execute/P/Q "INSERTINCLUDE \"Spectra_Includes\"";Execute/P "COMPILEPROCEDURES "	EndProc LoadSpectrumAnalysisPackage()		Execute/P/Q "INSERTINCLUDE \"Spectra_Includes\""	Execute/P "COMPILEPROCEDURES "	End

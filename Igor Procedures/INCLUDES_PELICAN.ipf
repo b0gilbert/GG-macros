@@ -1,1 +1,0 @@
-#pragma rtGlobals=1		// Use modern global access method.//Menu "PELICAN"//	"Load PELICAN Package"//EndProc LoadPELICANPackage()		Execute/P/Q "INSERTINCLUDE \"PELICAN_Includes\""	Execute/P "COMPILEPROCEDURES "	End
