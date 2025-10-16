@@ -28,4 +28,6 @@ The macros in the User Procedures folder are updated frequently. To update, simp
 If you use these routines please cite
 Gilbert, B., & Gilbert, P. U. P. A. (2025). GGMacros v1.0.0 (v1.0.0). 
 Zenodo. https://doi.org/10.5281/zenodo.17314121
-DOI 10.5281/zenodo.17314120. 
+DOI 10.5281/zenodo.17314121. 
+
+Acknowledgements: We thank Ross E. DeVol (PIC mapping), Dong Zhou (the nos routines) and Finn Kuusisto (peak finder)
