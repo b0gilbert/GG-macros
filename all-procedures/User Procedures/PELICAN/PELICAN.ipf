@@ -358,7 +358,7 @@ Function PelicanPanelMenus(PU_Struct) : PopupMenuControl
 		
 			if (cmpstr(ctrlName,"PhiDisplayMenu")==0)
 				gPhiDisplayChoice 	= PU_Struct.popNum
-			elseif (cmpstr(ctrlName,"ThetaDisplayMenu1")==0)
+			elseif (cmpstr(ctrlName,"")==0)
 				gDark2Light 	= PU_Struct.popNum
 				PelicanColorScaleBar()
 				PelicanScaleCircle()
@@ -1892,7 +1892,8 @@ Function /S PELICANDisplay(RGBImage,Title,Folder,NumX,NumY)
 	// Choice of displaying in-plane or spherical polar phi angle
 	MakeVariableIfNeeded("root:POLARIZATION:gDark2Light",2)	
 	NVAR gDark2Light = root:POLARIZATION:gDark2Light
-	PopupMenu ThetaDisplayMenu1 pos={400,9},title=" ",value="\K(29524,1,58982)light -> dark;\K(0,0,0)dark -> light;", mode=gDark2Light, proc=PelicanPanelMenus
+	//PopupMenu ThetaDisplayMenu1 pos={400,9},title=" ",value="\K(29524,1,58982)light -> dark;\K(0,0,0)dark -> light;", mode=gDark2Light, proc=PelicanPanelMenus
+	PopupMenu ThetaDisplayMenu1 pos={400,9},title=" ",value="light -> dark;dark -> light;", mode=gDark2Light, proc=PelicanPanelMenus
 	
 	
 	WAVE /D POL_BB 				= root:SPHINX:Stacks:POL_BB
@@ -1904,7 +1905,8 @@ Function /S PELICANDisplay(RGBImage,Title,Folder,NumX,NumY)
 	SetVariable SetDisplayBMax,title="\\Z16B\\Bmax",fSize=13
 	SetVariable SetDisplayBMax,limits={1,256,5},value=root:POLARIZATION:gDisplayBMax
 	
-	Button AutoRGBButton,pos={305.00,41.00},size={150.00,20.00},title="Autocolor"
+	//Button AutoRGBButton,pos={305.00,41.00},size={150.00,20.00},title="Autocolor"
+	Button AutoRGBButton,pos={305.00,41.00},size={150.00,20.00},title="\f02b\f00 brightness"
 	Button AutoRGBButton,fColor=(65535,0,0),proc=PELICANButtons
 	
 	
